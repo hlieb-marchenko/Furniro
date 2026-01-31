@@ -1,0 +1,27 @@
+._anim-item{
+    transition: all 0.6s;
+    opacity: 0;
+}
+._anim-item.top{
+    transform: translate(0px, -200%);
+}
+._anim-item.left{
+    transform: translate(-200%, 0px);
+}
+._anim-item.right{
+    transform: translate(200%, 0px);
+}
+._anim-item.scale{
+    transform: scale(0);
+}
+._anim-item.active{
+    opacity: 1;
+    transform: translate(0px,0px);
+    transform: scale(1);
+}
+
+
+
+
+
+

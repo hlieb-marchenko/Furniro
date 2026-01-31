@@ -1,0 +1,74 @@
+.main__ad{
+    height: 700px;
+    margin-bottom: 65px;
+    background: url('../img/scandinavian-interior-mockup-wall-decal-background\ 1.png') center center/cover;
+}
+.ad__body{
+    position: relative;
+}
+.ad__discover{
+    position: absolute;
+    top: 140px;
+    right: -45px;
+    width: 650px;
+    max-height: 450px;
+    border-radius: 10px;
+    background: #FFF3E3;
+    padding: 40px 45px;
+}
+.discover__subtitle{
+    color: var(--font-color, #333);
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+}
+.discover__title{
+    color: var(--Primary, #B88E2F);
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 65px; /* 125% */
+    margin-bottom: 17px;
+}
+.discover__text{
+    color: var(--font-color, #333);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px; /* 133.333% */
+    margin-bottom: 46px;
+}
+.discover__button{
+    display: inline-block;
+    
+}
+.discover__button a{
+    color: #FFF;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: var(--Primary, #B88E2F);
+    padding: 25px 72px;
+    display: inline-block;
+}
+
+@media(max-width: 1320px) {
+    .ad__discover{
+        right: 0px;
+    }
+}
+@media(max-width: 670px){
+    .ad__discover{
+        width: 100%;
+    }
+    .discover__subtitle{
+        font-size: 14px;
+    }
+    .discover__title{
+        font-size: 36px;
+        line-height: 46px;
+    }
+    .discover__text{
+        font-size: 16px;
+    }
+    .discover__button{
+        padding: 20px 60px;
+    }
+}

@@ -1,0 +1,49 @@
+@import url('./resetStyle.css');
+@import url("./_header.css");
+@import url("./_ad.css");
+@import url("./_category.css");
+@import url("./_products.css");
+@import url("./_footer.css");
+@import url("./_animation.css");
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: medium;
+    font-size: 16px;
+    color: black;
+}
+.container{
+    max-width: 1220px;
+    padding: 0px 10px;
+    margin: 0 auto;
+}
+.item_scale{
+    transition: all .5s;
+}
+.item_scale:hover{
+    transform: scale(1.1);
+}
+.link__top{
+    width: 50px;
+    height: 50px;
+    background-color: #888e2f;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: -80px;
+    transition: all .5s;
+    cursor: pointer;
+}
+.link__top img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(90deg);
+}
+.link__top:hover{
+    transform: scale(1.1);
+    filter: brightness(1.5);
+}
+.link__top._visible{
+    bottom: 80px;
+}
